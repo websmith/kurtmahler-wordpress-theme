@@ -30,7 +30,8 @@
 		<?php
 			$args = array(
 				'post_type' 	=> 'post',
-				'post_status'	=> 'publish'
+				'post_status'	=> 'publish',
+				'posts_per_page'=> 3
 			);
 			$the_query = new WP_Query( $args );
 		?>
@@ -63,6 +64,9 @@
 		endif;
 		wp_reset_postdata();
 		?>
+		<div class="posts-title">
+			<a href="<?php echo (get_option('show_on_front') == 'page') ? get_permalink(get_option('page_for_posts')) : bloginfo('url'); ?>" class="button centered">View All Posts</a>
+		</div>
 	</section>
 
 	<!-- Three -->
@@ -98,20 +102,6 @@
 					<h3>Tortor Ut</h3>
 					<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 				</li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- Four -->
-	<section id="cta" class="wrapper style4">
-		<div class="inner">
-			<header>
-				<h2>Arcue ut vel commodo</h2>
-				<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-			</header>
-			<ul class="actions vertical">
-				<li><a href="#" class="button fit special">Activate</a></li>
-				<li><a href="#" class="button fit">Learn More</a></li>
 			</ul>
 		</div>
 	</section>

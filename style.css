@@ -2362,6 +2362,13 @@ dk green:	515932
 			opacity: 0.25;
 		}
 
+		.button.centered {
+		    margin: auto;
+		    display: block;
+		    width: 300px;
+			max-width: 98%;
+		}
+
 		@media screen and (max-width: 736px) {
 
 			input[type="submit"],
@@ -4020,4 +4027,21 @@ dk green:	515932
 	    line-height: 17px;
 	    margin: 0;
 	    padding: 0 4px 5px;
+	}
+
+	.comment-list {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.comment-list > li.comment {
+		background-color: rgba(0, 0, 0, 0.0375);
+		padding: 25px;
+		margin-bottom: 15px;
+	}
+
+	.comment-meta.commentmetadata {
+	    padding-bottom: 20px;
+	    margin-bottom: 20px;
+	    border-bottom: 1px solid #ccc;
 	}

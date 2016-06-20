@@ -9,27 +9,13 @@
 		<section class="wrapper style5">
 			<div class="inner">
 				<?php the_content(); ?>
-
+				<?php the_tags( '<strong>Tagged as:</strong> ', ', ', ''); ?>
+				<hr>
 				<?php comments_template(); ?>
-
-				<?php
-				if ( is_singular( 'attachment' ) ) {
-					// Parent post navigation.
-					the_post_navigation( array(
-						'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'twentysixteen' ),
-					) );
-				} elseif ( is_singular( 'post' ) ) {
-					// Previous/next post navigation.
-					the_post_navigation( array(
-						'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentysixteen' ) . '</span> ' .
-							'<span class="screen-reader-text">' . __( 'Next post:', 'twentysixteen' ) . '</span> ' .
-							'<span class="post-title">%title</span>',
-						'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentysixteen' ) . '</span> ' .
-							'<span class="screen-reader-text">' . __( 'Previous post:', 'twentysixteen' ) . '</span> ' .
-							'<span class="post-title">%title</span>',
-					) );
-				}
-				?>
+				<ul class="actions navigation">
+					<li><?php previous_post_link(); ?></li>
+					<li><?php next_post_link(); ?></li>
+				</ul>
 			</div>
 		</section>
 	<?php endwhile; endif; ?>
