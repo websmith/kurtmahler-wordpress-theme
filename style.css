@@ -1,0 +1,306 @@
+/*
+Theme Name: Kurt Mahler
+Description: Personal Theme for Kurt Mahler
+Author: Apparatus
+Author URI: http://apparatusagency.com
+Version: 1.1
+
+COLORS:
+---------------------
+med blue: 	00717D
+red:		A64450
+dk blue:	003647
+lt green: 	A4A66A
+dk green:	515932
+---------------------
+*/
+@import url("assets/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url("assets/css/main.css");
+
+.breadcrumb {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/*-----------------
+HIDE GOOGLE RECAPTCHA
+-----------------*/
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+/*-----------------
+MAIN MENU
+-----------------*/
+
+.menu .sub-menu {
+  padding: 20px 0 20px 20px;
+  margin: 0 !important;
+  display: none;
+}
+
+.menu-item__dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .caret {
+  font-size: 18px;
+}
+
+/*-----------------
+POSTS
+-----------------*/
+
+.post {
+  min-height: 380px;
+}
+
+.blog .post .major.post-title {
+  font-size: 0.8em;
+}
+
+.posts-title {
+  padding: 20px;
+}
+
+.posts-title h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+.post .image.fit {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.post .image.fit img.image {
+  height: 276px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s opacity linear;
+}
+
+.post .major.post-title {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.post a img.image:hover {
+  opacity: 0.8;
+}
+
+.post .major.post-title {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .blog .\34 u,
+  .blog .\34 u\24,
+  .archive .\34 u,
+  .archive .\34 u\24 {
+    width: 100%;
+  }
+  .post {
+    /* margin-bottom: 30px; */
+    min-height: auto;
+  }
+  .post .image.fit {
+    overflow: visible;
+  }
+  .post .image.fit img.image {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 300px));
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  margin: auto;
+  justify-content: center;
+}
+
+/* .wrapper > .inner {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1240px;
+} */
+
+/*-----------------
+WP GENERATED CLASSES
+-----------------*/
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 0 0 2em 2em;
+  border-radius: 3px;
+  position: relative;
+  top: 0.25em;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+  border-radius: 3px;
+  position: relative;
+  top: 0.25em;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 0 2em 2em 0;
+  border-radius: 3px;
+  position: relative;
+  top: 0.25em;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  position: relative;
+  top: 0.25em;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%; /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.comment-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment-list > li.comment {
+  background-color: rgba(0, 0, 0, 0.0375);
+  padding: 25px;
+  margin-bottom: 15px;
+}
+
+.comment-meta.commentmetadata {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* Newsletter Opt-in Form */
+.subscribe {
+  padding: 40px;
+  background: #00717d;
+}
+
+.subscribe__title {
+  margin-bottom: 4px;
+}
+
+.subscribe__title,
+.subscribe__description {
+  text-align: center;
+}
+
+.subscribe .tnp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subscribe .tnp > form {
+  width: 500px;
+  max-width: 100%;
+}
+
+.subscribe .tnp .tnp-email::placeholder {
+  color: #00717d !important;
+  opacity: 1;
+}
+
+.subscribe .tnp .tnp-submit {
+  text-overflow: unset;
+  overflow: visible;
+  white-space: normal;
+  height: 2.75em;
+  width: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.subscribe-form label {
+    text-align: left;
+}
+
+.subscribe-form input {
+    background-color: rgba(255,255,255,.3)
+}
+
+.subscribe-form__first-last {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-form__first-last > p {
+    width: 48%;
+}
